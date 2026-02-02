@@ -20,7 +20,7 @@ h1 {
     font-size: 7rem;
 }
 
-
+/* Main Content Image */
 .logo__main {
   position: fixed;
   inset: 0;              
@@ -31,4 +31,80 @@ h1 {
   z-index: -1;
 }
 
+/* Lists */ 
+.list {
+    list-style: none;
+    padding-left: 0;
+}
+
+/* Links */
+a {
+    text-decoration: none;
+}
+
+/* Navigation Bars */
+.nav {
+    background: var(--color-primary);
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 0 1rem;
+    align-items: center;
+    position: fixed;
+  top: 1rem;
+  right: 1rem;
+  z-index: 10;
+}
+
+.nav__toggle {
+  font-size: 3rem;
+  background: none;
+  border: 0;
+  color: var(--color-headings);
+  cursor: pointer;
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 11;
+
+}
+
+.nav__list {
+   width: 100%;
+     display: none;
+  margin: 1rem 0 0;
+  background: var(--color-primary);
+  padding-top: 4rem;
+}
+
+.nav__list--open {
+  display: block;
+}
+
+.nav__item {
+    font-size: 4rem;
+    padding: 0.5rem 2rem;
+    letter-spacing: 0.2rem;
     
+}
+
+.nav__item > a {
+    color: var(--color-headings);
+    transition: color 0.3s;
+}
+
+.nav__item > a:hover {
+    color: var(--color-accent);
+
+}
+
+@media screen and (min-width: 768px) {
+  .nav__list {
+    width: auto;
+    font-size: 1.6rem;
+    max-height: 100%;
+    margin-left: auto;
+  }
+
+}
+
