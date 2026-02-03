@@ -20,15 +20,33 @@ h1 {
     font-size: 7rem;
 }
 
-/* Main Content Image */
-.logo__main {
-  position: fixed;
-  inset: 0;              
+/* Hero */
+.hero {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 4rem 1.75rem;
+  text-align: center;
+}
+
+.logo__main {             
   width: 100%;
   height: 100%;
   object-fit: contain;    
   object-position: center;
-  z-index: -1;
+  display: block;
+}
+
+@media screen and (min-width: 768px) {
+    .hero {
+        padding: 2rem 1.75rem;
+    }
+
+    .logo__main {
+        width: 60%;
+        justify-self: center;
+    
+    }
 }
 
 /* Lists */ 
@@ -138,7 +156,7 @@ a {
 .gallery img {
   width: 100%;
   height: auto;
-  border-radius: 10px;
+  border-radius: 0;
   display: block;
   aspect-ratio: 1 / 1;
   object-fit: cover;

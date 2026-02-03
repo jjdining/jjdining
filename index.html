@@ -12,8 +12,26 @@
       href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Zalando+Sans+Expanded:ital,wght@0,200..900;1,200..900&display=swap"
       rel="stylesheet"
     />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
   </head>
   <body>
+    <nav class="nav">
+      <button
+        class="nav__toggle"
+        aria-label="Toggle menu"
+        aria-expanded="false"
+      >
+        ☰
+      </button>
+      <ul class="list nav__list" id="navMenu">
+        <li class="nav__item"><a href="#">About</a></li>
+        <li class="nav__item"><a href="#">Packages</a></li>
+        <li class="nav__item"><a href="#">Contact</a></li>
+      </ul>
+    </nav>
+    <section class="hero" data-aos="zoom-in">
+      <img class="logo__main" src="images/logo.png" alt="J&J Logo" />
+    </section>
     <section class="gallery">
       <img
         src="images/dish5@1x.webp"
@@ -36,6 +54,11 @@
         alt=""
       />
     </section>
+
     <script src="js/main.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
   </body>
 </html>
