@@ -4,6 +4,11 @@
     --color-accent: #d3d1cb;
 }
 
+.container {
+    max-width: 1140px;
+    margin: 0 auto;
+}
+
 html {
     font-size: 62.5%;
 }
@@ -18,6 +23,19 @@ body {
 h1 {
     color: var(--color-accent);
     font-size: 7rem;
+}
+
+h2 {
+    color: var(--color-headings);
+    font-size: 5rem;
+    letter-spacing: 0.1rem;
+    text-transform: uppercase;
+}
+
+p {
+    color: var(--color-accent);
+    font-size: 2rem;
+    letter-spacing: 0.1rem;
 }
 
 /* Hero */
@@ -176,3 +194,14 @@ a {
   }
 }
 
+/* Blocks */ 
+.block {
+    padding: 6rem 2rem;
+    border: 0;
+    color: var(--color-headings);
+    text-align: center;
+}
+
+.block__heading {
+    margin-top: 0;
+}
