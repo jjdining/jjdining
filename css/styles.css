@@ -125,28 +125,36 @@ a {
 .gallery {
   display: grid;
   grid-template-columns: 1fr; /* mobile: 1 column */
-  gap: 3.5rem;
+  gap: 4rem;
   width: 100%;
   max-width: 1200px; /* optional: constrain max width */
   margin: 0 auto;
-  padding: 3rem 2rem;
+  padding: 4rem 1.75rem;
   box-sizing: border-box;
+  
 }
 
 /* Gallery images */
 .gallery img {
   width: 100%;
   height: auto;
-  border-radius: 2px;
+  border-radius: 10px;
   display: block;
-  aspect-ratio: 4 / 3;
+  aspect-ratio: 1 / 1;
   object-fit: cover;
 }
 
+
 /* Desktop and up */
 @media (min-width: 768px) {
-  .gallery {
+    .gallery {
     grid-template-columns: repeat(2, 1fr); /* 2 columns */
+    gap: 4rem;                          /* space between images */
+    padding-left: 4rem;                 /* match gap */
+    padding-right: 4rem;                /* match gap */
+    max-width: 1200px;                  /* optional: constrain width */
+    margin: 0 auto;                     /* center the grid */
+    box-sizing: border-box;
   }
 }
 
