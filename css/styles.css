@@ -70,21 +70,30 @@ a {
 }
 
 .nav__list {
-   width: 100%;
-     display: none;
-  margin: 1rem 0 0;
-  background: var(--color-primary);
-  padding-top: 4rem;
+   position: fixed;
+   inset: 0;
+   background: var(--color-primary);
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   opacity: 0;
+   transform: translateY(-2rem);
+   transition: opacity 0.3s ease, transform 0.3s ease;
+   pointer-events: none;
 }
 
 .nav__list--open {
-  display: block;
+  opacity: 1;
+  transform: translateY(0);
+  pointer-events: auto;
 }
 
 .nav__item {
     font-size: 4rem;
-    padding: 0.5rem 2rem;
+    padding: 1.5rem 0;
     letter-spacing: 0.2rem;
+    text-align: center;
     
 }
 
@@ -104,6 +113,10 @@ a {
     font-size: 1.6rem;
     max-height: 100%;
     margin-left: auto;
+  }
+
+  .nav__item {
+    padding: 1.5rem 2.5rem;
   }
 
 }
