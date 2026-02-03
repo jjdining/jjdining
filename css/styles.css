@@ -121,3 +121,32 @@ a {
 
 }
 
+/* Image Gallery */ 
+.gallery {
+  display: grid;
+  grid-template-columns: 1fr; /* mobile: 1 column */
+  gap: 3.5rem;
+  width: 100%;
+  max-width: 1200px; /* optional: constrain max width */
+  margin: 0 auto;
+  padding: 3rem 2rem;
+  box-sizing: border-box;
+}
+
+/* Gallery images */
+.gallery img {
+  width: 100%;
+  height: auto;
+  border-radius: 2px;
+  display: block;
+  aspect-ratio: 4 / 3;
+  object-fit: cover;
+}
+
+/* Desktop and up */
+@media (min-width: 768px) {
+  .gallery {
+    grid-template-columns: repeat(2, 1fr); /* 2 columns */
+  }
+}
+
