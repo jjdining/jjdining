@@ -211,6 +211,8 @@ a {
     background: var(--color-primary);
     padding-top: 10rem;
     text-align: center;
+    border-top: 2px solid var(--color-headings); /* adjust color and thickness */
+    padding-top: 20px; /* optional spacing above content */
 }
 
 .footer a {
