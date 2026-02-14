@@ -25,14 +25,18 @@
       </button>
 
       <ul class="list nav__list" id="navMenu">
-        <li class="nav__item"><a href="#">About</a></li>
-        <li class="nav__item"><a href="menu.html">Sample Menu</a></li>
-        <li class="nav__item"><a href="#">Packages</a></li>
-        <li class="nav__item"><a href="#">Contact</a></li>
+        <li class="nav__item"><a href="#">Home </a></li>
+        <li class="nav__item"><a href="#about">Our Story</a></li>
+        <li class="nav__item"><a href="menu.html">Sample Menus</a></li>
+        <li class="nav__item"><a href="#">Sunday Package</a></li>
+        <li class="nav__item"><a href="contact.html">Get in Touch</a></li>
       </ul>
     </nav>
     <section class="hero" data-aos="zoom-in">
-      <img class="logo__main" src="images/logo.png" alt="J&J Logo" />
+      <a href="/"
+        ><img class="logo__main" src="images/logo.png" alt="J&J Logo"
+      /></a>
+      <button class="btn">Book your experience</button>
     </section>
     <section class="gallery">
       <img
@@ -56,30 +60,93 @@
         alt=""
       />
     </section>
-    <section class="block">
-      <div class="container">
-        <h2 class="block__heading">our story</h2>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. At distinctio
-          reprehenderit repellendus laudantium magnam officiis perspiciatis
-          ducimus dolores soluta perferendis numquam dicta accusantium ex, dolor
-          vel mollitia modi eveniet? Tenetur?
-        </p>
+    <article id="about" class="stories">
+      <h2 class="story__heading">our story</h2>
+
+      <div class="story grid--1x2">
+        <div class="stories__content">
+          <div class="stories__text">
+            <h3 class="block__heading">Jack Huxley</h3>
+            <p>
+              After completing culinary school, I moved to Spain to further
+              develop my skills and immerse myself in the country’s rich food
+              culture. During my time there, I honed my craft and developed a
+              deep appreciation for Spanish ingredients, seasonality, and bold
+              yet simple flavors that continue to influence my cooking style
+              today. I later returned to England to join Sticky Walnut, which
+              had just been awarded AA Restaurant of the Year. Working in such a
+              high-performing and ambitious kitchen environment pushed me to
+              grow quickly, and through dedication and consistency, I progressed
+              to become Head Chef at the age of 22. Following this achievement,
+              I moved to Manchester to support a new opening within the same
+              restaurant group, helping to establish standards, build the team,
+              and maintain the group’s award-winning reputation. During my time
+              with Elite Bistros, I was involved in numerous high-profile events
+              across England, including the prestigious Obsession at Northcote.
+              During my career I had the privilege of working alongside renowned
+              chefs such as Michel Roux, Angela Hartnett, and Tom Kerridge to
+              name a few. Experiences that further refined my skill and
+              commitment to excellence.
+            </p>
+          </div>
+        </div>
+        <picture class="stories__image">
+          <source
+            type="image/webp"
+            srcset="images/JJ1x.webp 1x, images/JJ2x.webp 2x"
+          />
+          <img src="images/JJ2x.webp" alt="Jack Huxley" />
+        </picture>
       </div>
-    </section>
+      <div class="story grid--1x2">
+        <div class="stories__content">
+          <div class="stories__text">
+            <h3 class="block__heading">James Smith</h3>
+            <p>
+              After completing culinary school, I moved to Spain to further
+              develop my skills and immerse myself in the country’s rich food
+              culture. During my time there, I honed my craft and developed a
+              deep appreciation for Spanish ingredients, seasonality, and bold
+              yet simple flavors that continue to influence my cooking style
+              today. I later returned to England to join Sticky Walnut, which
+              had just been awarded AA Restaurant of the Year. Working in such a
+              high-performing and ambitious kitchen environment pushed me to
+              grow quickly, and through dedication and consistency, I progressed
+              to become Head Chef at the age of 22. Following this achievement,
+              I moved to Manchester to support a new opening within the same
+              restaurant group, helping to establish standards, build the team,
+              and maintain the group’s award-winning reputation. During my time
+              with Elite Bistros, I was involved in numerous high-profile events
+              across England, including the prestigious Obsession at Northcote.
+              During my career I had the privilege of working alongside renowned
+              chefs such as Michel Roux, Angela Hartnett, and Tom Kerridge to
+              name a few. Experiences that further refined my skill and
+              commitment to excellence.
+            </p>
+          </div>
+        </div>
+        <picture class="stories__image">
+          <source
+            type="image/webp"
+            srcset="images/JJ1x.webp 1x, images/JJ2x.webp 2x"
+          />
+          <img src="images/JJ2x.webp" alt="James Smith" />
+        </picture>
+      </div>
+    </article>
     <footer class="footer">
       <section class="footer__section">
         <div class="footer__content">
           <ul class="list">
-            <li><a href="/">About</a></li>
-            <li><a href="menu.html">Sample Menu</a></li>
-            <li><a href="/">Packages</a></li>
-            <li><a href="/">Contact</a></li>
+            <li><a href="#about">Our Story</a></li>
+            <li><a href="menu.html">Sample Menus</a></li>
+            <li><a href="/">Sunday Package</a></li>
+            <li><a href="/">Get in Touch</a></li>
           </ul>
         </div>
       </section>
       <div class="footer__brand">
-        <img src="images/logo.png" alt="" />
+        <a href="/"><img src="images/logo.png" alt="" /></a>
       </div>
       <a
         href="https://www.instagram.com/yourusername"
