@@ -16,6 +16,7 @@ html {
 body {
     font-family: Zalando Sans Expanded, sans-serif;
     line-height: 1.5;
+    letter-spacing: 0.1rem;
     background: var(--color-primary);
     margin: 0;
 }
@@ -55,52 +56,54 @@ p {
   width: 100%;
   max-width: 1200px;
   margin: 0 auto;
-  padding: 4rem 1.75rem;
-  text-align: center;
+  padding: 4rem 0;
+  
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  flex-direction: column;   /* stack children vertically */
+  align-items: center;      /* horizontally center all children */
+  justify-content: center;  /* vertically center if needed */
+  text-align: center;       /* for inline/inline-block children like buttons */
+  gap: 3rem;                /* space between logo and button */
 }
 
 .logo__main {
+  max-width: 400px;
   width: 100%;
-  max-width: 400px;   /* optional: keeps it smaller */
-  height: auto;       /* IMPORTANT */
+  height: auto;
   display: block;
-  margin: 0;
 }
-
 
 @media screen and (min-width: 768px) {
-    .hero {
-        padding: 2rem 1.75rem;
-    }
+  .hero {
+    padding: 6rem 2rem;
+  }
 
-    .logo__main {
-       
-        justify-self: center;
-    
-    }
+  .btn {
+    padding: 2rem 5rem;
+    font-size: 1.6rem;
+  }
 }
+
 
 /* Button */ 
 .btn {
-    background-color: var(--color-primary);
-    text-transform: uppercase;
-    width: auto;
-    letter-spacing: 0.2rem;
-    padding: 2rem 4rem;
-    color: var(--color-headings);
-    font-size: 1.5rem;
-    font-weight: 500;
-    border: 0.5px solid var(--color-headings);
-    border-radius: 50px;
-    cursor: pointer;
+  display: inline-block;            /* inline-block works well with text-align:center */
+  padding: 2rem 4rem;
+  background-color: var(--color-primary);
+  color: var(--color-headings);
+  text-transform: uppercase;
+  font-size: 1.5rem;
+  font-weight: 500;
+  letter-spacing: 0.2rem;
+  border: 0.5px solid var(--color-headings);
+  border-radius: 50px;
+  cursor: pointer;
+  transition: all 0.3s ease;
 }
 
 .btn:hover {
-    color: white;
-    border: 0.5px solid var(--color-accent);
+  color: white;
+  border-color: var(--color-accent);
 }
 
 /* Lists */ 
@@ -454,4 +457,125 @@ a {
   height: auto;       /* IMPORTANT */
   display: block;
   margin: 0;
+}
+
+.contact__heading {
+   display: flex;
+    flex-direction: column;
+    margin: 2rem 3rem;
+}
+
+
+.contact__content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 3rem 3rem;
+}
+
+.contact__content a {
+    color: #ab8262;
+    margin: 1rem 2rem;
+}
+
+@media screen and (min-width: 768px) {
+.contact__heading {
+   display: flex;
+   flex-direction: column;
+    margin: 1rem 8rem;
+}
+
+
+.contact__content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 3rem 8rem;
+}
+}
+
+/* ========== Sunday Packages ========== */
+
+.signature-experience {
+  padding: 80px 20px;
+  background-color: var(--color-primary);
+  text-align: center;
+}
+
+.signature-container {
+  max-width: 100%;
+  margin: 0 auto;
+}
+
+.signature-experience h2 {
+  font-size: 2.75rem;
+  font-weight: 500;
+  margin-bottom: 20px;
+}
+
+.signature-text {
+  font-size: 2rem;
+  line-height: 1.7;
+  margin-bottom: 30px;
+  color: var(--color-accent);
+}
+
+.price {
+  font-size: 1.5rem;
+  margin-bottom: 25px;
+  color: var(--color-accent);
+}
+
+.divider {
+  width: 50px;
+  height: 1px;
+  background-color: #c6a75e;
+  margin: 0 auto 25px auto;
+}
+
+.cta {
+  font-size: 2rem;
+  letter-spacing: 0.5px;
+  color: var(--color-headings);
+  
+}
+
+
+/* ========== Tablet & Desktop (768px and up) ========== */
+
+@media (min-width: 768px) {
+
+  .signature-experience {
+    padding: 120px 20px;
+  }
+
+  .signature-container {
+    max-width: 700px;
+  }
+
+  .signature-experience h2 {
+    font-size: 2.5rem;
+    margin-bottom: 30px;
+  }
+
+  .signature-text {
+    font-size: 1.6rem;
+    margin-bottom: 40px;
+  }
+
+  .price {
+    font-size: 1.55rem;
+    margin-bottom: 30px;
+  }
+
+  .divider {
+    width: 60px;
+    margin-bottom: 30px;
+  }
+
+  .cta {
+    font-size: 1.6rem;
+  }
 }
