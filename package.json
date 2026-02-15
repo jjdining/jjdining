@@ -10,6 +10,7 @@
   "license": "ISC",
   "type": "commonjs",
   "devDependencies": {
+    "@parcel/transformer-jsonld": "^2.16.4",
     "parcel": "^2.16.4"
   }
 }
