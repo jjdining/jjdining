@@ -32,34 +32,49 @@
         <li class="nav__item"><a href="contact.html">Get in Touch</a></li>
       </ul>
     </nav>
-    <section class="hero" data-aos="zoom-in">
+    <div class="hero" data-aos="zoom-in">
       <a href="/"
         ><img class="logo__main" src="images/logo.png" alt="J&J Logo"
       /></a>
       <a href="contact.html" class="btn">Book your experience</a>
-    </section>
-    <section class="gallery">
-      <img
-        src="images/dish5@1x.webp"
-        srcset="images/dish5@1x.webp 1x, images/dish5@2x.webp, 2x"
-        alt=""
-      />
-      <img
-        src="images/interaction1x.webp"
-        srcset="images/interaction1x.webp 1x, images/interaction2x.webp, 2x"
-        alt=""
-      />
-      <img
-        src="images/JJ3@1x.webp"
-        srcset="images/JJ3@1x.webp 1x, images/JJ3@2x.webp, 2x"
-        alt=""
-      />
-      <img
-        src="images/JJ1x.webp"
-        srcset="images/JJ1x.webp 1x, images/interaction2x.JJ2x.webp, 2x"
-        alt=""
-      />
-    </section>
+    </div>
+
+    <div class="gallery">
+      <picture>
+        <source
+          srcset="images/dish5@1x.webp 1x, images/dish5@2x.webp 2x"
+          type="image/webp"
+        />
+        <img src="images/dish5@1x.webp" alt="Plate of food on table" />
+      </picture>
+
+      <picture>
+        <source
+          srcset="images/interaction1x.webp 1x, images/interaction2x.webp 2x"
+          type="image/webp"
+        />
+        <img
+          src="images/interaction1x.webp"
+          alt="Interaction between chef and guest"
+        />
+      </picture>
+
+      <picture>
+        <source
+          srcset="images/JJ3@1x.webp 1x, images/JJ3@2x.webp 2x"
+          type="image/webp"
+        />
+        <img src="images/JJ3@1x.webp" alt="Chefs working in kitchen" />
+      </picture>
+
+      <picture>
+        <source
+          srcset="images/JJ1x.webp 1x, images/interaction2x.JJ2x.webp 2x"
+          type="image/webp"
+        />
+        <img src="images/JJ1x.webp" alt="Chefs standing in kitchen" />
+      </picture>
+    </div>
     <article id="about" class="stories">
       <h2 class="story__heading">our story</h2>
 
@@ -135,7 +150,7 @@
       </div>
     </article>
     <footer class="footer">
-      <section class="footer__section">
+      <div class="footer__section">
         <div class="footer__content">
           <ul class="list">
             <li><a href="#about">Our Story</a></li>
@@ -144,7 +159,7 @@
             <li><a href="contact.html">Get in Touch</a></li>
           </ul>
         </div>
-      </section>
+      </div>
       <div class="footer__brand">
         <a href="/"><img src="images/logo.png" alt="" /></a>
       </div>

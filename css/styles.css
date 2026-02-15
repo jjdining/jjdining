@@ -398,7 +398,7 @@ a {
   .footer {
     display: grid;
     margin: 0 auto;
-    grid-template-columns: repeat(2, 1fr)
+    grid-template-columns: repeat(2, 1fr);
     align-items: center;
     text-align: left;
     padding: 10rem;
@@ -578,4 +578,18 @@ a {
   .cta {
     font-size: 1.6rem;
   }
+}
+
+
+.menu__content {
+  padding: 8rem 2rem;
+  background-color: var(--color-primary);
+  text-align: center;
+}
+
+.menu-text {
+  font-size: 1.6rem;
+  line-height: 1.7;
+  margin-bottom: 30px;
+  color: var(--color-accent);
 }
